@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Profile</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="profile.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navpurple w-80 mx-auto fixed-top">
+      <a class="navbar-brand" href="news.html">
+        <img
+          src="icons/favicon.ico"
+          alt="Logo"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+        />
+      </a>
+      <form class="form-inline my-2 my-lg-0 mx-auto">
+        <input
+          class="form-control mr-sm-2"
+          type="search"
+          placeholder="search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          search
+        </button>
+      </form>
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">
+          <img
+            src="icons/user.png"
+            alt="Avatar"
+            width="30"
+            height="30"
+            class="d-inline-block align-top rounded-circle"
+          />
+        </button>
+        <div id="myDropdown" class="dropdown-content dropdown-menu-right">
+          <a href="profile.html">My Profile</a>
+          <a href="#">Settings</a>
+          <a href="#">Log out</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container profile-container p-5">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="profile-header">
+            <img
+              class="profile-picture"
+              src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D"
+              alt="Profile Picture"
+            />
+            <h2>Username</h2>
+            <p>Email: user@example.com</p>
+          </div>
+
+          <div class="text-center profile-info p-1">
+            <p>City: Astana</p>
+            <p>Hobby: Programming, Games, Football</p>
+          </div>
+
+          <div class="profile-actions p-2">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#myModal"
+            >
+              add to friends
+            </button>
+            <button class="btn btn-secondary">
+              <a href="chat.html" style="color: white">write a message</a>
+            </button>
+          </div>
+
+          <div class="posts">
+            <div class="post">
+              <p>
+                🎮 Today, I delved into Horizon 5 — the landscapes are simply
+                breathtaking! 🌄 The game's atmosphere is mesmerizing. What
+                games are you playing right now? Share your gaming experiences!
+                🕹️ <u>#Gamer #Games #GamingDay</u>
+              </p>
+            </div>
+            <div class="post">
+              <p>
+                💻 Task for today: optimize the code and make it more efficient.
+                🚀 Programming is like a puzzle you create yourself. What
+                interesting challenges have you tackled lately? Share your
+                experiences! 💬 <u>#CodeChallenge #Programming #CodingLife</u>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="sidebar col">
+            <div class="friends p-1 mb-5">
+              <h4><mark>Friends</mark></h4>
+              <ul class="friends-list">
+                <li class="friend">
+                  <img
+                    src="https://static.vecteezy.com/system/resources/previews/020/765/399/non_2x/default-profile-account-unknown-icon-black-silhouette-free-vector.jpg"
+                    alt="Friend 1"
+                  />
+                  <span>friend 1</span>
+                </li>
+                <li class="friend">
+                  <img
+                    src="https://static.vecteezy.com/system/resources/previews/020/765/399/non_2x/default-profile-account-unknown-icon-black-silhouette-free-vector.jpg"
+                    alt="Friend 2"
+                  />
+                  <span>friend 2</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="music p-1">
+              <h4><mark>Music</mark></h4>
+              <ul class="music-list p-1">
+                <li class="music-item">song 1</li>
+                <li class="music-item">song 2</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="myModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Friend request sent
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">Your friend request successfully sent.</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Закрыть
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

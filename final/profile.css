@@ -1,0 +1,93 @@
+.profile-container {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+  text-align: center;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-info {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.profile-info h2 {
+  margin-bottom: 10px;
+}
+
+.profile-info p {
+  color: #6c757d;
+}
+
+.profile-actions {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.profile-actions button {
+  margin-right: 10px;
+}
+
+.posts {
+  margin-top: 20px;
+}
+
+.post {
+  border: 1px solid #ced4da;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.friends-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.friend {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.friend img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.music-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.music-item {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    margin: 20px auto;
+  }
+
+  .profile-picture {
+    width: 100px;
+    height: 100px;
+  }
+}

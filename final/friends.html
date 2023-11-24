@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QyzyqOrtak</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navpurple w-80 mx-auto fixed-top">
+      <a class="navbar-brand" href="news.html">
+        <img
+          src="icons/favicon.ico"
+          alt="Logo"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+        />
+      </a>
+      <form class="form-inline my-2 my-lg-0 mx-auto">
+        <input
+          class="form-control mr-sm-2"
+          type="search"
+          placeholder="search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          search
+        </button>
+      </form>
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">
+          <img
+            src="icons/user.png"
+            alt="Avatar"
+            width="30"
+            height="30"
+            class="d-inline-block align-top rounded-circle"
+          />
+        </button>
+        <div id="myDropdown" class="dropdown-content dropdown-menu-right">
+          <a href="#">My Profile</a>
+          <a href="#">Settings</a>
+          <a href="#">Log out</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-2">
+          <nav class="navbar navbar-expand-lg navpurple w-100">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#leftNav"
+              aria-controls="leftNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="leftNav">
+              <ul class="navbar-nav flex-column w-100">
+                <li class="nav-item">
+                  <a class="nav-link" href="news.html"
+                    ><i class="fas fa-newspaper"></i> News</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="messages.html"
+                    ><i class="fas fa-envelope"></i> Messages</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="music.html"
+                    ><i class="fas fa-music"></i> Music</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="friends.html"
+                    ><i class="fas fa-user"></i> friends</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div style="padding-top: 1vh">
+            <small>
+              <a href="#">About U</a> | <a href="#">Privacy Policy</a> |
+              <a href="#">Terms of use</a> |
+              <a href="#">Contacts</a>
+            </small>
+          </div>
+        </div>
+
+        <div class="col-md-10 d-flex flex-column">
+          <div class="border rounded p-3" style="min-height: 100vh">
+            <h5 class="text-center mx-2 my-2">Messages</h5>
+            <div class="col">
+              <div class="row">
+                <a href="profile.html" class="chat btn-dark mx-2 my-auto p-2">
+                  <img
+                    class="img-fluid rounded-circle"
+                    src="https://static.vecteezy.com/system/resources/previews/020/765/399/non_2x/default-profile-account-unknown-icon-black-silhouette-free-vector.jpg"
+                    alt=""
+                    style="max-width: 30px"
+                  />
+                  friend 1
+                </a>
+              </div>
+              <div class="row">
+                <a href="profile.html" class="chat btn-dark mx-2 my-auto p-2">
+                  <img
+                    class="img-fluid rounded-circle"
+                    src="https://static.vecteezy.com/system/resources/previews/020/765/399/non_2x/default-profile-account-unknown-icon-black-silhouette-free-vector.jpg"
+                    alt=""
+                    style="max-width: 30px"
+                  />
+                  friend 2
+                </a>
+              </div>
+              <div class="row">
+                <a href="profile.html" class="chat btn-dark mx-2 my-auto p-2">
+                  <img
+                    class="img-fluid rounded-circle"
+                    src="https://static.vecteezy.com/system/resources/previews/020/765/399/non_2x/default-profile-account-unknown-icon-black-silhouette-free-vector.jpg"
+                    alt=""
+                    style="max-width: 30px"
+                  />
+                  friend 3
+                </a>
+              </div>
+              <div class="row">
+                <a href="profile.html" class="chat btn-dark mx-2 my-auto p-2">
+                  <img
+                    class="img-fluid rounded-circle"
+                    src="https://static.vecteezy.com/system/resources/previews/020/765/399/non_2x/default-profile-account-unknown-icon-black-silhouette-free-vector.jpg"
+                    alt=""
+                    style="max-width: 30px"
+                  />
+                  friend 4
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/your-font-awesome-kit.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QyzyqOrtak</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navpurple w-80 mx-auto fixed-top">
+      <a class="navbar-brand" href="news.html">
+        <img
+          src="icons/favicon.ico"
+          alt="Logo"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+        />
+      </a>
+      <form class="form-inline my-2 my-lg-0 mx-auto">
+        <input
+          class="form-control mr-sm-2"
+          type="search"
+          placeholder="search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          search
+        </button>
+      </form>
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">
+          <img
+            src="icons/user.png"
+            alt="Avatar"
+            width="30"
+            height="30"
+            class="d-inline-block align-top rounded-circle"
+          />
+        </button>
+        <div id="myDropdown" class="dropdown-content dropdown-menu-right">
+          <a href="profile.html">My Profile</a>
+          <a href="#">Settings</a>
+          <a href="#">Log out</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-2">
+          <nav class="navbar navbar-expand-lg navpurple w-100">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#leftNav"
+              aria-controls="leftNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="leftNav">
+              <ul class="navbar-nav flex-column w-100">
+                <li class="nav-item">
+                  <a class="nav-link" href="news.html"
+                    ><i class="fas fa-newspaper"></i> News</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="messages.html"
+                    ><i class="fas fa-envelope"></i> Messages</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="music.html"
+                    ><i class="fas fa-music"></i> Music</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="friends.html"
+                    ><i class="fas fa-user"></i> friends</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div style="padding-top: 1vh">
+            <small>
+              <a href="#">About U</a> | <a href="#">Privacy Policy</a> |
+              <a href="#">Terms of use</a> |
+              <a href="#">Contacts</a>
+            </small>
+          </div>
+        </div>
+
+        <div class="col-md-7 d-flex flex-column">
+          <div class="border rounded p-3" style="min-height: 100vh">
+            <h5 class="mb-4">Football</h5>
+            <div class="border rounded p-3 bg-dark text-light text-center">
+              <h6 class="mb-3">Barcelona-PSG | 6-1 | Highlights</h6>
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe
+                  src="https://www.youtube.com/embed/h4m68r8kWAc"
+                  class="embed-responsive-item rounded p-3"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <p class="mt-3">
+                This is a video of the highlights from the Barcelona-PSG 6-1
+                match.
+              </p>
+            </div>
+            <br />
+            <div class="border rounded p-3 bg-dark text-light text-center">
+              <h6 class="mb-3">
+                Injury to a Spanish national football team player.
+              </h6>
+
+              <image
+                src="https://i.ytimg.com/vi/ca_XokkF2Bc/maxresdefault.jpg"
+                class="img-fluid rounded p-3"
+              ></image>
+
+              <p id="shortText">
+                The football player of the Spanish national team and Barcelona
+                Xavi was diagnosed with a complete rupture of the anterior
+                cruciate ligament of the right knee and a related injury to the
+                lateral meniscus, according to the official website of the
+                blue-garnet
+                <span id="showMore" class="btn btn-link" onclick="showMore()"
+                  >Show more</span
+                >
+              </p>
+              <div id="fullText" class="collapse">
+                <p>
+                  The football player of the Spanish national team and Barcelona
+                  Xavi was diagnosed with a complete rupture of the anterior
+                  cruciate ligament of the right knee and a related injury to
+                  the lateral meniscus, according to the official website of the
+                  blue-garnet. On Sunday, the 19-year-old midfielder was injured
+                  in the match of the Euro 2024 qualifying tournament against
+                  the Georgian team (3:1). He entered the match in the starting
+                  lineup, was injured and was replaced in the 26th minute.
+                </p>
+              </div>
+            </div>
+            <br />
+            <div class="border rounded p-3 bg-dark text-light text-center">
+              <h6 class="mb-3">
+                Real Madrid - Manchester City | 6 x 5 on aggregate | Highlights
+              </h6>
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe
+                  src="https://www.youtube.com/embed/U8YOR4_IeTI"
+                  class="embed-responsive-item rounded p-3"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <p class="mt-3">
+                In a thrilling Champions League semi-final, Real Madrid stunned
+                Manchester City with a 6-5 aggregate victory. After a 4-3
+                first-leg win at the Etihad, Real Madrid produced a stunning
+                comeback at the Bernabeu, winning 3-1 to advance to the final.
+                Rodrygo's two goals in quick succession sealed the victory for
+                Real Madrid, who demonstrated their never-say-die spirit and
+                ability to produce moments of magic when it matters most.
+              </p>
+            </div>
+            <br />
+            <div class="border rounded p-3 bg-dark text-light text-center">
+              <h6 class="mb-3">
+                Real Madrid 1 x 3 Barcelona | 2022/23 Supercopa de España |
+                Highlights
+              </h6>
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe
+                  src="https://www.youtube.com/embed/bpYYab9vRd4"
+                  class="embed-responsive-item rounded p-3"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <p class="mt-3">
+                In a dominant display, Barcelona defeated Real Madrid 3-1 to
+                lift the 2023 Supercopa de España. Gavi, Pedri, and Robert
+                Lewandowski were the heroes for Barca, each scoring a goal to
+                secure the victory. Real Madrid managed a late consolation goal
+                through Karim Benzema, but it was not enough to overturn the
+                deficit. Barcelona's victory marked their first trophy under the
+                leadership of Xavi Hernández, and it signaled a resurgence for
+                the club after a period of decline.
+              </p>
+            </div>
+            <br />
+            <div class="border rounded p-3 bg-dark text-light text-center">
+              <h6 class="mb-3">
+                Chelsea 4-4 Man City | Highlights - EXTENDED | Premier League
+                2023/24
+              </h6>
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe
+                  src="https://www.youtube.com/embed/FkPTihsfAfk"
+                  class="embed-responsive-item rounded p-3"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <p class="mt-3">
+                In a thrilling Premier League encounter, Chelsea and Manchester
+                City played out an eight-goal draw at Stamford Bridge. The match
+                was a roller-coaster of emotions, with both teams taking the
+                lead multiple times. Erling Haaland opened the scoring for City
+                with a controversial penalty, but Chelsea responded with goals
+                from Thiago Silva and Raheem Sterling. Manuel Akanji equalized
+                for City just before half-time, and Haaland scored his second
+                goal early in the second half. Chelsea clawed back again with a
+                goal from Mason Mount, and Cole Palmer scored a dramatic
+                stoppage-time equalizer for City to secure a share of the
+                points. The match was a testament to the attacking quality of
+                both teams, and it was a fitting end to an entertaining Premier
+                League weekend.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="border rounded p-3">
+            <h5>Topics</h5>
+            <div class="btn btn-dark w-100 mb-2">Football</div>
+            <div class="btn btn-dark w-100 mb-2">Programming</div>
+            <div class="btn btn-dark w-100 mb-2">Games</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/your-font-awesome-kit.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

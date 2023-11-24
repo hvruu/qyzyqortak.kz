@@ -1,0 +1,210 @@
+.navpurple {
+  background-color: #aaaaff;
+}
+
+.nav-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-item a {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.nav-item a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent 50%, #f8f9fa 50%);
+  transition: left 0.3s ease;
+  z-index: -1;
+}
+
+.nav-item.active a::after {
+  left: 100%;
+}
+
+.nav-item i {
+  margin-right: 5px;
+}
+
+.chat {
+  flex-grow: 1;
+  width: 100%;
+  height: 50px; /* Выберите желаемую высоту */
+  background-color: #8844bb; /* Цвет фона */
+  border: 2px solid #ddd; /* Граница */
+  margin-bottom: 10px; /* Промежуток между чатами */
+  transition: background-color 0.3s; /* Плавное изменение цвета при наведении */
+}
+
+.chat:hover {
+  background-color: #aaaaff; /* Изменение цвета при наведении */
+}
+
+.musiclist {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+  height: 10vh; /* Выберите желаемую высоту */
+  background-color: #f0f0f0; /* Цвет фона */
+  border: 1px solid #ddd; /* Граница */
+}
+
+#audio-player {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+#controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#controls button {
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.dropbtn {
+  background-color: #aaaaff;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #8844bb;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+.sidenav {
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  top: 0; /* Stay at the top */
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+body {
+  padding: 8vh;
+}
+.chatbody {
+  overflow: hidden;
+}
+
+#chat-container {
+  height: 87vh; /* Высота 80% от экрана */
+  position: relative; /* Относительное позиционирование */
+}
+
+.message-block {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  display: block;
+}
+
+#messages {
+  max-height: 100%; /* Максимальная высота контейнера для сообщений */
+  overflow-y: auto; /* Скроллинг при переполнении */
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+#message-input-container {
+  position: absolute; /* Абсолютное позиционирование */
+  bottom: 15px; /* Отступ от нижнего края */
+  left: 0;
+  width: 100%;
+}
+
+#message-input {
+  width: calc(100% - 10px);
+  margin-right: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+}
+
+#send-button {
+  padding: 8px 15px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: #aaaaff !important;
+}
+
+.btn:hover {
+  background-color: #8844bb !important;
+}
+
+.bg-dark {
+  background-color: #8844bb !important;
+}
